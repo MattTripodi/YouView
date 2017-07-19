@@ -61,16 +61,13 @@
                                     <constraint firstAttribute="height" constant="75" id="OCD-1n-YPM"/>
                                     <constraint firstAttribute="bottom" secondItem="vPV-vd-oa4" secondAttribute="bottom" constant="8" id="WuY-D2-2cd"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH3-oE-vQK" customClass="CustomLabelSignInScreen" customModule="YouView" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH3-oE-vQK">
                                 <rect key="frame" x="16" y="170" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Wiq-Us-4We"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -82,6 +79,9 @@
                                     <constraint firstAttribute="width" constant="150" id="czi-MW-fsp"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYd-ti-qdJ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Slg-Dp-yWg">
                                 <rect key="frame" x="46" y="420" width="283" height="124"/>
@@ -131,10 +131,6 @@
                             <constraint firstAttribute="trailing" secondItem="3J9-be-c3m" secondAttribute="trailing" id="zAE-EK-KwM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="selectASignInMethodLabel" destination="lH3-oE-vQK" id="5xG-fY-4Yu"/>
-                        <outlet property="signInBtn" destination="ucO-jd-s5k" id="QSK-YU-2eo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

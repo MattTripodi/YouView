@@ -10,6 +10,7 @@ target 'YouView' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
 
   target 'YouViewTests' do
     inherit! :search_paths
