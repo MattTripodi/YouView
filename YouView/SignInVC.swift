@@ -24,6 +24,9 @@ class SignInVC: UIViewController, UITextFieldDelegate {
 		self.hideKeyboard()
 		self.emailField.delegate = self
 		self.passwordField.delegate = self
+		//
+		
+		
 	
 	}
 
