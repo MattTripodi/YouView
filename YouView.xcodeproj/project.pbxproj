@@ -15,6 +15,8 @@
 		EEC1D9571F1EA240001571A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC1D9551F1EA240001571A2 /* LaunchScreen.storyboard */; };
 		EEC1D9621F1EA240001571A2 /* YouViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9611F1EA240001571A2 /* YouViewTests.swift */; };
 		EEC1D96D1F1EA3BB001571A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC1D96C1F1EA3BB001571A2 /* GoogleService-Info.plist */; };
+		EEC1D9721F1EB0AA001571A2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */; };
+		EEC1D9741F1EB0CD001571A2 /* RoundedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */; };
 		F629DC2C1C53577EF5FAAAEA /* Pods_YouView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA5200CE66A4628C176FAB6 /* Pods_YouView.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		EEC1D9611F1EA240001571A2 /* YouViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouViewTests.swift; sourceTree = "<group>"; };
 		EEC1D9631F1EA240001571A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC1D96C1F1EA3BB001571A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		EEC1D96F1F1EA871001571A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */,
+				EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -360,6 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC1D9721F1EB0AA001571A2 /* MaterialView.swift in Sources */,
+				EEC1D9741F1EB0CD001571A2 /* RoundedImages.swift in Sources */,
 				EEC1D94F1F1EA240001571A2 /* SignInVC.swift in Sources */,
 				EEC1D94D1F1EA240001571A2 /* AppDelegate.swift in Sources */,
 			);
