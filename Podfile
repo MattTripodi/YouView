@@ -11,6 +11,7 @@ target 'YouView' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
 
   target 'YouViewTests' do
     inherit! :search_paths
