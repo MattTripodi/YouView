@@ -96,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-jd-s5k" customClass="CustomBtn" customModule="YouView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="34"/>
@@ -108,6 +108,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYo-6Q-LdO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -131,6 +134,10 @@
                             <constraint firstAttribute="trailing" secondItem="3J9-be-c3m" secondAttribute="trailing" id="zAE-EK-KwM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="F7z-4q-HZi" id="yeD-xx-xed"/>
+                        <outlet property="passwordField" destination="cUU-4J-NMQ" id="Jdm-bO-iNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
