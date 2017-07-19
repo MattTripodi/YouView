@@ -17,6 +17,12 @@
 		EEC1D96D1F1EA3BB001571A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC1D96C1F1EA3BB001571A2 /* GoogleService-Info.plist */; };
 		EEC1D9721F1EB0AA001571A2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */; };
 		EEC1D9741F1EB0CD001571A2 /* RoundedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */; };
+		EEC1D9761F1EF1F7001571A2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9751F1EF1F7001571A2 /* CustomView.swift */; };
+		EEC1D9791F1EF280001571A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9781F1EF280001571A2 /* Constants.swift */; };
+		EEC1D97B1F1EF4E3001571A2 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D97A1F1EF4E3001571A2 /* RoundBtn.swift */; };
+		EEC1D97D1F1EF68A001571A2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D97C1F1EF68A001571A2 /* CustomTextField.swift */; };
+		EEC1D97F1F1EF843001571A2 /* CustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D97E1F1EF843001571A2 /* CustomBtn.swift */; };
+		EEC1D9811F1EFB6D001571A2 /* CustomLabelSignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D9801F1EFB6D001571A2 /* CustomLabelSignInScreen.swift */; };
 		F629DC2C1C53577EF5FAAAEA /* Pods_YouView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA5200CE66A4628C176FAB6 /* Pods_YouView.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,12 @@
 		EEC1D96C1F1EA3BB001571A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImages.swift; sourceTree = "<group>"; };
+		EEC1D9751F1EF1F7001571A2 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		EEC1D9781F1EF280001571A2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEC1D97A1F1EF4E3001571A2 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		EEC1D97C1F1EF68A001571A2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EEC1D97E1F1EF843001571A2 /* CustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBtn.swift; sourceTree = "<group>"; };
+		EEC1D9801F1EFB6D001571A2 /* CustomLabelSignInScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabelSignInScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		EEC1D94B1F1EA240001571A2 /* YouView */ = {
 			isa = PBXGroup;
 			children = (
+				EEC1D9771F1EF26F001571A2 /* Util */,
 				EEC1D9701F1EA878001571A2 /* Model */,
 				EEC1D96F1F1EA871001571A2 /* View */,
 				EEC1D96E1F1EA862001571A2 /* Controller */,
@@ -139,6 +152,11 @@
 			children = (
 				EEC1D9711F1EB0AA001571A2 /* MaterialView.swift */,
 				EEC1D9731F1EB0CD001571A2 /* RoundedImages.swift */,
+				EEC1D9751F1EF1F7001571A2 /* CustomView.swift */,
+				EEC1D97A1F1EF4E3001571A2 /* RoundBtn.swift */,
+				EEC1D97C1F1EF68A001571A2 /* CustomTextField.swift */,
+				EEC1D97E1F1EF843001571A2 /* CustomBtn.swift */,
+				EEC1D9801F1EFB6D001571A2 /* CustomLabelSignInScreen.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -148,6 +166,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EEC1D9771F1EF26F001571A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EEC1D9781F1EF280001571A2 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		F6F0FCFB1649A49AAED56495 /* Pods */ = {
@@ -366,10 +392,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC1D9761F1EF1F7001571A2 /* CustomView.swift in Sources */,
+				EEC1D97B1F1EF4E3001571A2 /* RoundBtn.swift in Sources */,
+				EEC1D97F1F1EF843001571A2 /* CustomBtn.swift in Sources */,
+				EEC1D9811F1EFB6D001571A2 /* CustomLabelSignInScreen.swift in Sources */,
 				EEC1D9721F1EB0AA001571A2 /* MaterialView.swift in Sources */,
 				EEC1D9741F1EB0CD001571A2 /* RoundedImages.swift in Sources */,
+				EEC1D97D1F1EF68A001571A2 /* CustomTextField.swift in Sources */,
 				EEC1D94F1F1EA240001571A2 /* SignInVC.swift in Sources */,
 				EEC1D94D1F1EA240001571A2 /* AppDelegate.swift in Sources */,
+				EEC1D9791F1EF280001571A2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

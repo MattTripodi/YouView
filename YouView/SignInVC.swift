@@ -17,17 +17,7 @@ class SignInVC: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		// To Give label and button rounded borders
-		selectASignInMethodLabel.layer.borderColor = UIColor.white.cgColor
-		selectASignInMethodLabel.layer.borderWidth = 1
-		selectASignInMethodLabel.layer.cornerRadius = 5
-		
-		signInBtn.layer.borderWidth = 1
-		signInBtn.layer.cornerRadius = 5
-		//
-		
-		
+	
 	}
 
 }
