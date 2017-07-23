@@ -198,12 +198,16 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UDO-uf-0by">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image-camera" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-Pp-7AP">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image-camera" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-Pp-7AP" customClass="CircleView" customModule="YouView" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.47843137250000001" green="0.68627450980000004" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="Jf9-UJ-JTW"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ot1-6m-MUM" appends="YES" id="RLr-SB-z5g"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqD-Ye-rDv" customClass="CustomTextField" customModule="YouView" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -355,6 +359,7 @@
                     </view>
                     <connections>
                         <outlet property="captionTextField" destination="AqD-Ye-rDv" id="K8H-YY-6HQ"/>
+                        <outlet property="imageAdd" destination="WqT-Pp-7AP" id="qcS-2J-JBm"/>
                         <outlet property="tableView" destination="Rl1-tg-f14" id="qfp-ed-Q0B"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Xri-BP-CWZ"/>
                     </connections>
@@ -363,6 +368,11 @@
                 <tapGestureRecognizer id="9Jz-RD-ByW">
                     <connections>
                         <action selector="signOutPressed:" destination="tDy-nT-B2Y" id="V9F-CW-L7Q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ot1-6m-MUM">
+                    <connections>
+                        <action selector="addImageTapped:" destination="tDy-nT-B2Y" id="7yb-IF-ZwF"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

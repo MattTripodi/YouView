@@ -10,12 +10,14 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var captionTextField: CustomTextField!
+	@IBOutlet weak var imageAdd: UIImageView!
 	
 	var posts = [Post]()
+	var imagePicker: UIImagePickerController!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		self.hideKeyboard()
 		self.captionTextField.delegate = self
 		//
+		
+		imagePicker = UIImagePickerController()
+		imagePicker.allowsEditing = true 
+		imagePicker.delegate = self
 		
 		tableView.delegate = self
 		tableView.dataSource = self
@@ -65,6 +71,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		} else {
 			return PostCell()
 		}
+	}
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+			imageAdd.image = image
+		} else {
+			print("MATT: A valid image wasn't selected")
+		}
+		imagePicker.dismiss(animated: true, completion: nil)
+	}
+	
+	
+	@IBAction func addImageTapped(_ sender: Any) {
+		present(imagePicker, animated: true, completion: nil)
 	}
 	
 	@IBAction func signOutPressed(_ sender: Any) {
