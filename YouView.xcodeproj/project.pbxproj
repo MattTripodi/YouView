@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		923DF1CABD9CB857BE37C067 /* Pods_YouViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9FEB6A07BC153A40278409 /* Pods_YouViewTests.framework */; };
 		EE1744381F239B56000C8D2F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1744371F239B56000C8D2F /* DataService.swift */; };
+		EE17443A1F24EDEE000C8D2F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1744391F24EDEE000C8D2F /* Post.swift */; };
 		EEC1D94D1F1EA240001571A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D94C1F1EA240001571A2 /* AppDelegate.swift */; };
 		EEC1D94F1F1EA240001571A2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D94E1F1EA240001571A2 /* SignInVC.swift */; };
 		EEC1D9521F1EA240001571A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC1D9501F1EA240001571A2 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		D412F7ED91BCEAC4D3E3BA97 /* Pods-YouView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouView/Pods-YouView.release.xcconfig"; sourceTree = "<group>"; };
 		EA20F3D2EC2C89D38808F80C /* Pods-YouViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouViewTests/Pods-YouViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE1744371F239B56000C8D2F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		EE1744391F24EDEE000C8D2F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EEC1D9491F1EA240001571A2 /* YouView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC1D94C1F1EA240001571A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC1D94E1F1EA240001571A2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		EEC1D9701F1EA878001571A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE1744391F24EDEE000C8D2F /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				EEC1D97F1F1EF843001571A2 /* CustomBtn.swift in Sources */,
 				EEC1D9811F1EFB6D001571A2 /* CustomLabelSignInScreen.swift in Sources */,
 				EEC1D9721F1EB0AA001571A2 /* MaterialView.swift in Sources */,
+				EE17443A1F24EDEE000C8D2F /* Post.swift in Sources */,
 				EEC1D9741F1EB0CD001571A2 /* RoundedImages.swift in Sources */,
 				EEC1D97D1F1EF68A001571A2 /* CustomTextField.swift in Sources */,
 				EEC1D94F1F1EA240001571A2 /* SignInVC.swift in Sources */,
