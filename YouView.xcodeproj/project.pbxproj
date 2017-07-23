@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		923DF1CABD9CB857BE37C067 /* Pods_YouViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9FEB6A07BC153A40278409 /* Pods_YouViewTests.framework */; };
+		EE1744381F239B56000C8D2F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1744371F239B56000C8D2F /* DataService.swift */; };
 		EEC1D94D1F1EA240001571A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D94C1F1EA240001571A2 /* AppDelegate.swift */; };
 		EEC1D94F1F1EA240001571A2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1D94E1F1EA240001571A2 /* SignInVC.swift */; };
 		EEC1D9521F1EA240001571A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC1D9501F1EA240001571A2 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		AE9FEB6A07BC153A40278409 /* Pods_YouViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D412F7ED91BCEAC4D3E3BA97 /* Pods-YouView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouView/Pods-YouView.release.xcconfig"; sourceTree = "<group>"; };
 		EA20F3D2EC2C89D38808F80C /* Pods-YouViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouViewTests/Pods-YouViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1744371F239B56000C8D2F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EEC1D9491F1EA240001571A2 /* YouView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC1D94C1F1EA240001571A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC1D94E1F1EA240001571A2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE1744361F239B3B000C8D2F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE1744371F239B56000C8D2F /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		EEC1D9401F1EA240001571A2 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		EEC1D94B1F1EA240001571A2 /* YouView */ = {
 			isa = PBXGroup;
 			children = (
+				EE1744361F239B3B000C8D2F /* Services */,
 				EEC1D9771F1EF26F001571A2 /* Util */,
 				EEC1D9701F1EA878001571A2 /* Model */,
 				EEC1D96F1F1EA871001571A2 /* View */,
@@ -402,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC1D9851F2002E5001571A2 /* CircleView.swift in Sources */,
+				EE1744381F239B56000C8D2F /* DataService.swift in Sources */,
 				EEC1D9761F1EF1F7001571A2 /* CustomView.swift in Sources */,
 				EEC1D9871F202792001571A2 /* PostCell.swift in Sources */,
 				EEC1D97B1F1EF4E3001571A2 /* RoundBtn.swift in Sources */,

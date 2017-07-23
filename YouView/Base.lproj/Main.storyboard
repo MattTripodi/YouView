@@ -156,23 +156,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-sF-sEE">
-                                <rect key="frame" x="250" y="20" width="68" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Sign Out">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f17-Ii-Qow">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-wz-qNo">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-wz-qNo">
                                         <rect key="frame" x="16" y="20" width="45" height="38"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="2ee-Tw-ICK"/>
                                             <constraint firstAttribute="height" constant="38" id="TCP-kJ-w0c"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9Jz-RD-ByW" appends="YES" id="lmb-pF-Byw"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWA-ya-bPm">
                                         <rect key="frame" x="117" y="21" width="140" height="36"/>
@@ -236,22 +232,22 @@
                                     <constraint firstAttribute="height" constant="65" id="ktm-O8-J8n"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="476" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rl1-tg-f14">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="484" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rl1-tg-f14">
                                 <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="476" id="6kB-ir-vsY" customClass="PostCell" customModule="YouView" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="476"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="484" id="6kB-ir-vsY" customClass="PostCell" customModule="YouView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="484"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6kB-ir-vsY" id="eBb-tv-MrM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="484"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuB-pS-VKk" customClass="CustomView" customModule="YouView" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="460"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="468"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-5n-VwN">
-                                                            <rect key="frame" x="8" y="8" width="327" height="414"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="426"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUW-3P-Qjx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
@@ -279,13 +275,13 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SubaruBRZ1" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-Rv-n1X">
-                                                                    <rect key="frame" x="0.0" y="58" width="327" height="295"/>
+                                                                    <rect key="frame" x="0.0" y="58" width="327" height="310"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="295" id="lR8-rN-o6y"/>
+                                                                        <constraint firstAttribute="height" constant="310" id="lR8-rN-o6y"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Just me chilling on the block" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-45-asP">
-                                                                    <rect key="frame" x="0.0" y="361" width="327" height="53"/>
+                                                                    <rect key="frame" x="0.0" y="376" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7Ig-GG-Jtg"/>
@@ -296,16 +292,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Dg-Jo-WnE">
-                                                            <rect key="frame" x="232" y="430" width="103" height="22"/>
+                                                            <rect key="frame" x="232" y="442" width="103" height="18"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-pE-G9j">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="18"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.093712262810000002" green="0.24581009149999999" blue="0.39139956240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7777777" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpT-sL-Ceq">
-                                                                    <rect key="frame" x="40.5" y="0.0" width="62.5" height="22"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="62.5" height="18"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.093712262810000002" green="0.24581009149999999" blue="0.39139956240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -358,11 +354,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionTextField" destination="AqD-Ye-rDv" id="K8H-YY-6HQ"/>
                         <outlet property="tableView" destination="Rl1-tg-f14" id="qfp-ed-Q0B"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Xri-BP-CWZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8k-A8-ko6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Jz-RD-ByW">
+                    <connections>
+                        <action selector="signOutPressed:" destination="tDy-nT-B2Y" id="V9F-CW-L7Q"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="773.60000000000002" y="36.431784107946029"/>
         </scene>

@@ -10,12 +10,18 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 	
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var captionTextField: CustomTextField!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		// To hide the keyboard
+		self.hideKeyboard()
+		self.captionTextField.delegate = self
+		//
 		
 		tableView.delegate = self
 		tableView.dataSource = self
