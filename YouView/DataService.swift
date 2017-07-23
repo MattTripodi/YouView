@@ -40,7 +40,7 @@ class DataService {
 	var REF_USER_CURRENT: DatabaseReference {
 		//let uid = KeychainWrapper.stringForKey(KEY_UID)
 		//let uid = KeychainWrapper.set(KEY_UID)
-		let uid = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID)
+		let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
 		let user = REF_USERS.child(uid!)
 		return user
 	}
@@ -53,5 +53,21 @@ class DataService {
 		REF_USERS.child(uid).updateChildValues(userData)
 	}
 	
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

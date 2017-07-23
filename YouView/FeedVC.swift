@@ -26,6 +26,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		tableView.delegate = self
 		tableView.dataSource = self
 		self.tableView.backgroundColor = UIColor(red: 122 / 255, green: 175 / 255, blue: 205 / 255, alpha: 1)
+		
+		DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+			print(snapshot.value)
+		})
 
     }
 	
