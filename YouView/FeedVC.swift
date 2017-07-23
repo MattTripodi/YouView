@@ -30,6 +30,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		self.tableView.backgroundColor = UIColor(red: 122 / 255, green: 175 / 255, blue: 205 / 255, alpha: 1)
 		
 		DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+			
+			self.posts = []
+			
 			if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
 				for snap in snapshot {
 					print("SNAP: \(snap)")
@@ -55,9 +58,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let post = posts[indexPath.row]
-		print("MATT: \(post.caption)")
 		
-		return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+		if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+			cell.configureCell(post: post)
+			return cell
+		} else {
+			return PostCell()
+		}
 	}
 	
 	@IBAction func signOutPressed(_ sender: Any) {
