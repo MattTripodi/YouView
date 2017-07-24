@@ -213,7 +213,7 @@
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7op-rd-lsI" customClass="RoundBtn" customModule="YouView" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="49" height="49"/>
@@ -223,6 +223,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="iFh-B1-25E"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="tDy-nT-B2Y" eventType="touchUpInside" id="yn2-Ib-KMs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -278,13 +281,13 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SubaruBRZ1" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-Rv-n1X">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-Rv-n1X">
                                                                     <rect key="frame" x="0.0" y="58" width="327" height="310"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="310" id="lR8-rN-o6y"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Just me chilling on the block" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-45-asP">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-45-asP">
                                                                     <rect key="frame" x="0.0" y="376" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -381,7 +384,6 @@
     </scenes>
     <resources>
         <image name="MeAndAlexa" width="720" height="719"/>
-        <image name="SubaruBRZ1" width="3024" height="3024"/>
         <image name="YouViewLogo" width="366" height="178"/>
         <image name="add-image-camera" width="2000" height="2000"/>
         <image name="add-post" width="88" height="88"/>
