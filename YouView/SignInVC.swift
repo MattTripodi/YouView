@@ -80,6 +80,7 @@ class SignInVC: UIViewController, UITextFieldDelegate {
 					Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
 						if error != nil {
 							print("Matt: Unable to authenticate with Firebase using email")
+							self.signInErrorAlert()
 						} else {
 							print("MATT: Successfully authenticated with Firebase")
 							if let user = user {
@@ -98,6 +99,12 @@ class SignInVC: UIViewController, UITextFieldDelegate {
 		let keychainResult = KeychainWrapper.standard.set(id , forKey: KEY_UID)
 		print("MATT: Data saved to keychain \(keychainResult)")
 		performSegue(withIdentifier: "goToFeed", sender: nil)
+	}
+	
+	func signInErrorAlert() {
+		let alert = UIAlertController(title: "Fields Required", message: "Email address and password is required", preferredStyle: UIAlertControllerStyle.alert)
+		alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
 	}
 	
 

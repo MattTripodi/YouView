@@ -60,7 +60,7 @@ class PostCell: UITableViewCell {
 			if let _ = snapshot.value as? NSNull {
 				self.likeImg.image = UIImage(named: "empty-heart")
 			} else {
-				self.likeImg.image = UIImage(named: "filled-heart")
+				self.likeImg.image = UIImage(named: "filled-heart-YouView-blue")
 			}
 		})
 	}
@@ -68,7 +68,7 @@ class PostCell: UITableViewCell {
 	func likeTapped(sender: UITapGestureRecognizer) {
 		likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
 			if let _ = snapshot.value as? NSNull {
-				self.likeImg.image = UIImage(named: "filled-heart")
+				self.likeImg.image = UIImage(named: "filled-heart-YouView-blue")
 				self.post.adjustLikes(addLike: true)
 				self.likesRef.setValue(true)
 			} else {

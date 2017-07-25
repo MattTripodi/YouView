@@ -51,6 +51,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 					}
 				}
 			}
+			self.posts.reverse()
 			self.tableView.reloadData()
 		})
     }
@@ -90,6 +91,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		imagePicker.dismiss(animated: true, completion: nil)
 	}
 	
+	func postErrorAlert() {
+		let alert = UIAlertController(title: "Select a photo", message: "Please select a photo from your camera roll. You can tap on the camera icon to select any photo", preferredStyle: UIAlertControllerStyle.alert)
+		alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+		self.present(alert, animated: true, completion: nil)
+	}
 	
 	@IBAction func addImageTapped(_ sender: Any) {
 		present(imagePicker, animated: true, completion: nil)
@@ -103,6 +109,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		}
 		guard let img = imageAdd.image, imageSelected == true else {
 			print("MATT: An image must be selected")
+			postErrorAlert()
 			return
 		}
 		
@@ -140,6 +147,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
 		imageSelected = false
 		imageAdd.image = UIImage(named: "add-image-camera")
 		
+		posts.reverse()
 		tableView.reloadData()
 	}
 	
